@@ -6,8 +6,10 @@ from datetime import datetime, timezone
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
-# ── Terminal colours ────────────────────────────────────────────────────
+# ── Terminal colours & Windows compatibility ────────────────────────────
 R, Y, C, B, X = "\033[91m", "\033[93m", "\033[96m", "\033[1m", "\033[0m"
+if sys.platform == "win32":
+    os.system("")  # enables VT100 escape sequences in Windows CMD
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s  %(message)s",
                     datefmt="%Y-%m-%d %H:%M:%S")

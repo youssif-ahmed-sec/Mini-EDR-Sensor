@@ -60,7 +60,7 @@ The script uses Python's [`watchdog`](https://github.com/gorakhargosh/watchdog) 
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/your-username/Mini-EDR-Sensor.git
+git clone https://github.com/youssif-ahmed-sec/Mini-EDR-Sensor.git
 cd Mini-EDR-Sensor
 pip install -r requirements.txt
 ```
@@ -161,6 +161,12 @@ This tool detects adversary behaviours mapped to:
 | T1005 | Data from Local System | Collection |
 | T1552.001 | Credentials in Files | Credential Access |
 | T1485 | Data Destruction | Impact |
+
+---
+
+## 👤 Author
+
+**Youssif Ahmed** — [@youssif-ahmed-sec](https://github.com/youssif-ahmed-sec)
 
 ---
 
